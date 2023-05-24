@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+   <style>
+        body {
+            background-image: url("static/img.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Vignan University</h1>
+        <p>Vignan's Institute of Information Technology (VIIT) was established in 2002 in the City of Destiny, Visakhapatnam, to cater to the educational needs of the general public. It acquired Autonomous status in the year 2017 and NBA and NAAC(A+) accredited Institute. The experience gained by Vignan through its earlier institutions at Guntur has only helped in establishing very high-quality standards right from the inception and also is one of the reasons for the success.</p>
+        <button onclick="redirectToResult()">Result Corner</button>
+    </div>
+
+    <script>
+        function redirectToResult() {
+            // Redirect to the result page
+            window.location.href = "result";
+        }
+    </script>
+</body>
+</html>

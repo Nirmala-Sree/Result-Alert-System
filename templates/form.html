@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Login</title>
+    <style>
+        body {
+            background-image: url("static/back.jpg");
+
+            background-size: cover;
+        }
+
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Member Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent form submission
+            
+            // Perform login validation here
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            // Example validation: Check against predefined credentials
+            if (username === "nirmalasreemv@gmail.com" && password === "nirmala@9703") {
+                // Redirect to the home page
+             window.location.replace("home");
+;
+
+            } else {
+                // Show an error message
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
