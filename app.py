@@ -50,7 +50,7 @@ def result():
                     s.starttls()
 
                     # Use the application-specific password for authentication
-                    app_password = "iziyhuomuckascqa"  # Replace with your application-specific password
+                    app_password = "********"  # Replace with your application-specific password
                     s.login(fromaddr, app_password)
 
                     # Send the email
